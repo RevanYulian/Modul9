@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Nama Siswa RPL</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: center;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        th {
+            background-color: yellow;
+        }
+        </style>
+</head>
+<body>
+    <h1>Data Nama Siswa RPL</h1>
+    <H3>SMK Negeri 4 Malang</H3>
+    <table border="1" cellspacing="0" cellpadding="10" align="center">
+    <th>No</th>
+    <th>NIS</th>
+    <th>Nama Siswa</th>
+    <th>Kelas</th>
+    <script>
+        let siswa = [
+            { nis: "1001", nama: "Andi", kelas: "RPL 1" },
+            { nis: "1002", nama: "Budi", kelas: "RPL 1" },
+            { nis: "1003", nama: "Citra", kelas: "RPL 2" },
+            { nis: "1004", nama: "Dewi", kelas: "RPL 2" }
+        ];
+        let no = 1;
+        siswa.forEach((item) => {
+            document.write("<tr>");
+            document.write("<td>" + no++ + "</td>");
+            document.write("<td>" + item.nis + "</td>");
+            document.write("<td>" + item.nama + "</td>");
+            document.write("<td>" + item.kelas + "</td>");
+            document.write("</tr>");
+        });
+    </script>
+</body>
+</html>
